@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "/Gxe208KFZc=",
+  "success": true,
+  "projectFilePath": "/Users/zaimod/Desktop/University/FindFiApp/FindFi.EF/FindFi.Ef.Domain/FindFi.Ef.Domain.csproj",
+  "expectedPackageFiles": [
+    "/Users/zaimod/.nuget/packages/microsoft.extensions.configuration/9.0.0/microsoft.extensions.configuration.9.0.0.nupkg.sha512",
+    "/Users/zaimod/.nuget/packages/microsoft.extensions.configuration.abstractions/9.0.0/microsoft.extensions.configuration.abstractions.9.0.0.nupkg.sha512",
+    "/Users/zaimod/.nuget/packages/microsoft.extensions.configuration.environmentvariables/9.0.0/microsoft.extensions.configuration.environmentvariables.9.0.0.nupkg.sha512",
+    "/Users/zaimod/.nuget/packages/microsoft.extensions.primitives/9.0.0/microsoft.extensions.primitives.9.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
