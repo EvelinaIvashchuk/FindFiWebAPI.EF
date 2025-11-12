@@ -303,3 +303,4 @@
 /Users/zaimod/Desktop/University/FindFiApp/FindFi.EF/FindFi.Ef.Api/obj/Debug/net9.0/FindFi.Ef.Api.pdb
 /Users/zaimod/Desktop/University/FindFiApp/FindFi.EF/FindFi.Ef.Api/obj/Debug/net9.0/FindFi.Ef.Api.genruntimeconfig.cache
 /Users/zaimod/Desktop/University/FindFiApp/FindFi.EF/FindFi.Ef.Api/obj/Debug/net9.0/ref/FindFi.Ef.Api.dll
+/Users/zaimod/Desktop/University/FindFiApp/FindFi.EF/FindFi.Ef.Api/obj/Debug/net9.0/FindFi.Ef.Api.sourcelink.json

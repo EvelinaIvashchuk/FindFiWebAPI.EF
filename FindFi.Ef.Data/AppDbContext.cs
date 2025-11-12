@@ -5,23 +5,21 @@ namespace FindFi.Ef.Data;
 
 public class AppDbContext(DbContextOptions<AppDbContext> options) : DbContext(options)
 {
-    public DbSet<Customer> Customers => Set<Customer>();
-    public DbSet<CustomerAddress> CustomerAddresses => Set<CustomerAddress>();
-    public DbSet<Product> Products => Set<Product>();
-    public DbSet<Order> Orders => Set<Order>();
-    public DbSet<OrderItem> OrderItems => Set<OrderItem>();
-    public DbSet<OrderDetails> OrderDetails => Set<OrderDetails>();
+    public DbSet<Listing> Listings => Set<Listing>();
+    public DbSet<Media> Media => Set<Media>();
+    public DbSet<Pricing> Pricing => Set<Pricing>();
+    public DbSet<Tag> Tags => Set<Tag>();
+    public DbSet<Availability> Availabilities => Set<Availability>();
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         base.OnModelCreating(modelBuilder);
         
-        modelBuilder.Entity<Customer>().ToTable("Customer");
-        modelBuilder.Entity<CustomerAddress>().ToTable("CustomerAddress");
-        modelBuilder.Entity<Product>().ToTable("Product");
-        modelBuilder.Entity<Order>().ToTable("Order");
-        modelBuilder.Entity<OrderItem>().ToTable("OrderItem");
-        modelBuilder.Entity<OrderDetails>().ToTable("OrderDetails");
+        modelBuilder.Entity<Listing>().ToTable("Listing");
+        modelBuilder.Entity<Media>().ToTable("Media");
+        modelBuilder.Entity<Pricing>().ToTable("Pricing");
+        modelBuilder.Entity<Tag>().ToTable("Tag");
+        modelBuilder.Entity<Availability>().ToTable("Availability");
         
         modelBuilder.ApplyConfigurationsFromAssembly(typeof(AppDbContext).Assembly);
     }

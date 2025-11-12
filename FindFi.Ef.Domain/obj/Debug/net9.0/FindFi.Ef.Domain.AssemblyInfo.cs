@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FindFi.Ef.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9b175b11fcfe1d4d4d4850f07083b84d6144ad1b")]
 [assembly: System.Reflection.AssemblyProductAttribute("FindFi.Ef.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FindFi.Ef.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

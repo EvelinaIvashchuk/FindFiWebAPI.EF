@@ -1,3 +1,4 @@
+using AutoMapper;
 using FindFi.Ef.Bll.Abstractions;
 using FindFi.Ef.Bll.Mapping;
 using FindFi.Ef.Bll.Services;
@@ -9,12 +10,13 @@ public static class ServiceCollectionExtensions
 {
     public static IServiceCollection AddEfBll(this IServiceCollection services)
     {
-        services.AddAutoMapper(cfg =>
-        {
-            cfg.AddProfile<ProductProfile>();
-        }, typeof(ProductProfile).Assembly);
+        // AutoMapper: scan current assembly for profiles
+        services.AddAutoMapper(typeof(ApiMappingProfile).Assembly);
 
-        services.AddScoped<IProductService, ProductService>();
+        // BLL services
+        services.AddScoped<IListingService, ListingService>();
+        services.AddScoped<ITagService, TagService>();
+
         return services;
     }
 }

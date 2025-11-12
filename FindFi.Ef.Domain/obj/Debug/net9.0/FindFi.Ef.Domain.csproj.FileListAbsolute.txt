@@ -23,3 +23,4 @@
 /Users/zaimod/Desktop/University/FindFiApp/FindFi.EF/FindFi.Ef.Domain/obj/Debug/net9.0/refint/FindFi.Ef.Domain.dll
 /Users/zaimod/Desktop/University/FindFiApp/FindFi.EF/FindFi.Ef.Domain/obj/Debug/net9.0/FindFi.Ef.Domain.pdb
 /Users/zaimod/Desktop/University/FindFiApp/FindFi.EF/FindFi.Ef.Domain/obj/Debug/net9.0/ref/FindFi.Ef.Domain.dll
+/Users/zaimod/Desktop/University/FindFiApp/FindFi.EF/FindFi.Ef.Domain/obj/Debug/net9.0/FindFi.Ef.Domain.sourcelink.json

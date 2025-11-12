@@ -12,11 +12,9 @@ public static class ServiceCollectionExtensions
         // DbContext should be registered by the caller (API) with proper connection string and provider
         services.AddScoped<IEfUnitOfWork, EfUnitOfWork>();
 
-        // Optional direct repos registration (resolve from UoW)
-        services.AddScoped<ICustomerRepository>(sp => sp.GetRequiredService<IEfUnitOfWork>().Customers);
-        services.AddScoped<IOrderRepository>(sp => sp.GetRequiredService<IEfUnitOfWork>().Orders);
-        services.AddScoped<IProductRepository>(sp => sp.GetRequiredService<IEfUnitOfWork>().Products);
-
+        // Open-generic repository registration
+        services.AddScoped(typeof(IAsyncRepository<>), typeof(GenericRepository<>));
+        
         return services;
     }
 }

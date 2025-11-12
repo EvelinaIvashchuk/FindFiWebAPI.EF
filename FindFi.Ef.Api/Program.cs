@@ -29,7 +29,7 @@ builder.Services.AddSwaggerGen(c =>
     {
         Title = "FindFi.Ef API",
         Version = "v1",
-        Description = "EF Core Code‑First REST API для пошуку та оренди квартир/будинків без рієлторів. Містить приклад (Products) з DTO/AutoMapper/BLL/UoW.",
+        Description = "EF Core Code‑First REST API для пошуку та оренди квартир/будинків без рієлторів. Містить приклад (Listings, Tags) з DTO/AutoMapper/BLL/UoW.",
         Contact = new Microsoft.OpenApi.Models.OpenApiContact
         {
             Name = "FindFi.EF", 
@@ -38,9 +38,9 @@ builder.Services.AddSwaggerGen(c =>
     });
 });
 
-// FluentValidation
+// FluentValidation (no validators currently)
 builder.Services.AddFluentValidationAutoValidation();
-builder.Services.AddValidatorsFromAssemblyContaining<FindFi.Ef.Bll.Validation.CreateProductDtoValidator>();
+builder.Services.AddValidatorsFromAssemblyContaining<AppDbContext>();
 
 var connectionString = builder.Configuration.GetConnectionString("DB1")
                        ?? builder.Configuration.GetConnectionString("Default")

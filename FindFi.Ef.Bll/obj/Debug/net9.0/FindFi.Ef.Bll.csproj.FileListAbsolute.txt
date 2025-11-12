@@ -33,3 +33,4 @@
 /Users/zaimod/Desktop/University/FindFiApp/FindFi.EF/FindFi.Ef.Bll/obj/Debug/net9.0/refint/FindFi.Ef.Bll.dll
 /Users/zaimod/Desktop/University/FindFiApp/FindFi.EF/FindFi.Ef.Bll/obj/Debug/net9.0/FindFi.Ef.Bll.pdb
 /Users/zaimod/Desktop/University/FindFiApp/FindFi.EF/FindFi.Ef.Bll/obj/Debug/net9.0/ref/FindFi.Ef.Bll.dll
+/Users/zaimod/Desktop/University/FindFiApp/FindFi.EF/FindFi.Ef.Bll/obj/Debug/net9.0/FindFi.Ef.Bll.sourcelink.json

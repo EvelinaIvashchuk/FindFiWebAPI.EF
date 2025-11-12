@@ -33,3 +33,4 @@
 /Users/zaimod/Desktop/University/FindFiApp/FindFi.EF/FindFi.Ef.Data/obj/Debug/net9.0/FindFi.Ef.Data.pdb
 /Users/zaimod/Desktop/University/FindFiApp/FindFi.EF/FindFi.Ef.Data/obj/Debug/net9.0/FindFi.Ef.Data.genruntimeconfig.cache
 /Users/zaimod/Desktop/University/FindFiApp/FindFi.EF/FindFi.Ef.Data/obj/Debug/net9.0/ref/FindFi.Ef.Data.dll
+/Users/zaimod/Desktop/University/FindFiApp/FindFi.EF/FindFi.Ef.Data/obj/Debug/net9.0/FindFi.Ef.Data.sourcelink.json
