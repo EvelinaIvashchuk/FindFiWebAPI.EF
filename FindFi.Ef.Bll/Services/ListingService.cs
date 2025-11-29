@@ -1,6 +1,3 @@
-using System.Linq;
-using System.Threading;
-using System.Threading.Tasks;
 using AutoMapper;
 using FindFi.Ef.Bll.Abstractions;
 using FindFi.Ef.Bll.DTOs;
@@ -65,5 +62,10 @@ public class ListingService : IListingService
         var list = await _repo.ListAsync(spec, cancellationToken);
         var entity = list.FirstOrDefault();
         return entity == null ? null : _mapper.Map<ListingDto>(entity);
+    }
+
+    public Task<int> GetListingCount(CancellationToken cancellationToken = default)
+    {
+        return _repo.CountAsync(cancellationToken);
     }
 }

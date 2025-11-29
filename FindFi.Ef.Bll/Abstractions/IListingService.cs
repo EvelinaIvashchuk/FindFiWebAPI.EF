@@ -8,4 +8,6 @@ public interface IListingService
 {
     Task<PagedResult<ListingDto>> GetListingsAsync(ListingQuery query, CancellationToken cancellationToken = default);
     Task<ListingDto?> GetByIdAsync(long id, CancellationToken cancellationToken = default);
+    Task<int> GetListingCount(CancellationToken cancellationToken = default);
+
 }

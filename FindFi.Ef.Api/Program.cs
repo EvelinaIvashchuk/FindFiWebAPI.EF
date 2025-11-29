@@ -55,6 +55,7 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 
 builder.Services.AddEfDal();
 builder.Services.AddEfBll();
+builder.Services.AddHealthChecks();
 
 var app = builder.Build();
 
@@ -72,6 +73,7 @@ app.UseMiddleware<CorrelationIdMiddleware>();
 app.UseMiddleware<ExceptionHandlingMiddleware>();
 
 app.MapControllers();
+app.MapHealthChecks("/health");
 
 // Ensure DB and seed (idempotent)
 using (var scope = app.Services.CreateScope())

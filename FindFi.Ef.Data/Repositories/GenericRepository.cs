@@ -29,6 +29,11 @@ public class GenericRepository<TEntity> : IAsyncRepository<TEntity> where TEntit
     {
         return _set.AsNoTracking().ToListAsync(cancellationToken);
     }
+    
+    public Task<int> CountAsync(CancellationToken cancellationToken = default)
+    {
+        return _set.AsNoTracking().CountAsync(cancellationToken);
+    }
 
     public virtual Task UpdateAsync(TEntity entity, CancellationToken cancellationToken = default)
     {
