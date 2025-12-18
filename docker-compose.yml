@@ -1,0 +1,29 @@
+services:
+  db:
+    image: mysql:8.0
+    restart: always
+    environment:
+      MYSQL_DATABASE: catalog_core
+      MYSQL_ROOT_PASSWORD: rootpassword
+      MYSQL_PASSWORD: 12345678
+      MYSQL_USER: findfi_user
+    ports:
+      - "3308:3306"
+    volumes:
+      - db_data:/var/lib/mysql
+
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "5022:8080"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ConnectionStrings__DB1=Server=db;Port=3306;Database=catalog_core;User ID=root;Password=rootpassword;SslMode=None;AllowPublicKeyRetrieval=True;
+    depends_on:
+      - db
+    restart: on-failure
+
+volumes:
+  db_data:
